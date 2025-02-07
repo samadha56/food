@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  go-app:
+    build: .
+    container_name: food
+    ports:
+      - "8081:8081"
+    networks:
+      - go_network
+
+networks:
+  go_network:
+    driver: bridge
