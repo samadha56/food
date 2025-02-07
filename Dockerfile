@@ -5,7 +5,7 @@ FROM golang:1.22.3
 WORKDIR /app
 
 # Copy Go modules and install dependencies
-COPY go.mod go.sum ./
+COPY go.mod ./
 RUN go mod tidy
 
 # Copy the source code

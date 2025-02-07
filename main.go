@@ -9,14 +9,13 @@ import (
 	"food/internal/usecase"
 )
 
-
 func main() {
 	pingUC := usecase.NewPingUseCase()
 	pingHandler := pingHttp.NewPingHandler(pingUC)
 
 	http.HandleFunc("/ping", pingHandler.Ping)
 
-	port := ":8080"
+	port := ":8081"
 	fmt.Println("Server is running on port", port)
 	log.Fatal(http.ListenAndServe(port, nil))
 }
