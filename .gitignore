@@ -1,0 +1,45 @@
+# Binaries and executables
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+*.a
+*.o
+*.log
+
+# Go build and cache files
+/bin/
+/obj/
+/tmp/
+*.test
+
+# Go modules
+/vendor/
+go.sum
+go.work
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Debugging files
+trace.out
+heap.out
+cpu.out
+
+# Air temporary files
+.air/
+tmp/
+
+# Docker
+docker-compose.override.yml
+
+# Environment variable files
+.env
